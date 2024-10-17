@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* fundo preto */
+}
+
+header {
+  background-color: #333; /* fundo escuro */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444; /* borda inferior */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: #fff; /* texto branco */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff; /* texto branco */
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  color: #d31818; /* texto cinza claro */
+}
+
+.games-list {
+  padding: 20px;
+}
+
+.game-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #333; /* fundo escuro */
+  padding: 10px;
+  border-radius: 10px; /* borda arredondada */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* efeito neon */
+}
+
+.game-card img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 10px; /* borda arredondada */
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.game-info p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.play-btn {
+  background-color: #333; /* fundo*/
+}

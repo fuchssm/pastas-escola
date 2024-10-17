@@ -1,0 +1,159 @@
+/*Para toda a tela*/
+body{
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.imagem{
+  border-radius: 20%;
+  width: 30%;
+}
+/*Deixar convite do lado do outro*/
+.container{
+      display: flex;
+}
+/*Menu superior, com as opções do site*/
+.navbar {
+    background-image: linear-gradient(to right, #892cdc, #00ff00);
+    background-size: 100% 3 px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    justify-content: center;
+    
+  }
+  /*Menu superior completo*/
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+  }
+  /*Home, sobre nós...*/
+  .navbar li {
+    margin-right: 20px;
+    color: #000;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar a:hover {
+    color: #fff
+  }
+  
+  .navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    /*background-image: linear-gradient(to right,#0b0fe4, #fdfdfd,);*/
+    border-radius: 10px 10px 0 0;
+  }
+  .navbar li:hover{
+    /*background-image: linear-gradient(to right, #0be6ee, #0a75f0);*/
+    color: #00ff00;
+  }
+  .ingre{
+    display: flex;
+    color: #fffefe;
+    align-items:self-start;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 0 10px #06e624;
+  }
+  .adq{
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #06e606;
+    color: #000;
+    width: 40%;
+    height: 50%;
+    background-image: linear-gradient(to right, #b775f0, #34c759);
+  }
+  .h1{
+  color: #fff;
+   padding: 10px;
+   margin: 10px;
+   font-size: large;
+  }
+
+  .adq p{
+    color: #000;
+    margin-bottom: 10px;
+    font-size: large;
+    
+  }
+  .adq-b{
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #892cdc;
+    color: #000;
+    width: 40%;
+    height: 50%;
+    background-image: linear-gradient(to right, #34c759, #b775f0);
+  }
+  /*.adq-b: p{
+    font-size: large;
+  }*/
+  .button-01 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #06f025fa;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in0.25s;
+    box-shadow: 0 2px 25px #c20be6;
+}
+
+.button-01:focus{
+  outline: 0;
+}
+.button-01:before,
+.button-01:after{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 140%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+/*Estilos responsivos
+
+@media screen and (max-width:768px){
+  .menu{
+     flex-direction: column;
+     align-items: center;
+  }
+  .menu li{
+     display: block;
+     margin: 10px 0;
+  }
+}*/
